@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+int a[10],n=7,pos,val,i;
+printf("Enter the array elements:");
+for(i=0;i<n;i++)
+scanf("%d",&a[i]);
+printf("Enter the position of the element to be inserted:");
+scanf("%d",&pos);
+printf("Enter the value:");
+scanf("%d",&val);
+for(i=n;i>=pos;i--)
+a[i+1]=a[i];
+a[pos]=val;
+for(i=0;i<=n;i++)
+printf("%d",a[i]);
+return 0;
+}
